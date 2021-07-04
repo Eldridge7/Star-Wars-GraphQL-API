@@ -1,5 +1,6 @@
 const axios = require("axios");
 const graphql = require("graphql");
+const PeopleType = require("./TypeDefs/PeopleType");
 const HomeworldType = require("./TypeDefs/HomeworldType");
 const {
   GraphQLObjectType,
@@ -8,8 +9,6 @@ const {
   GraphQLString,
   GraphQLList,
 } = graphql;
-
-const PeopleType = require("./TypeDefs/PeopleType");
 
 const RootQuery = new GraphQLObjectType({
   name: "RootQueryType",

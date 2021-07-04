@@ -1,6 +1,6 @@
 const axios = require("axios");
 const graphql = require("graphql");
-const HomeWorldType = require("./TypeDefs/HomeWorldType");
+const HomeworldType = require("./TypeDefs/HomeworldType");
 const {
   GraphQLObjectType,
   GraphQLSchema,
@@ -82,7 +82,7 @@ const RootQuery = new GraphQLObjectType({
     },
 
     homeworlds: {
-      type: new GraphQLList(HomeWorldType),
+      type: new GraphQLList(HomeworldType),
 
       resolve(parent, args) {
         const baseURL = `https://swapi.dev/api/planets`;
@@ -98,7 +98,7 @@ const RootQuery = new GraphQLObjectType({
     },
 
     homeworld: {
-      type: HomeWorldType,
+      type: HomeworldType,
       args: {
         id: { type: GraphQLInt },
       },

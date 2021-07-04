@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "build": "cd client && npm install && npm run build",
     "start": "nodemon --watch --exec node --experimental-modules server.js"
@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "bcrypt": "^5.0.0",
+    "cjs-loader": "^0.1.0",
     "concurrently": "^6.2.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",

@@ -1,7 +1,7 @@
 const axios = require("axios");
 const graphql = require("graphql");
-const PeopleType = require("./TypeDefs/PeopleType");
-const HomeworldType = require("./TypeDefs/HomeworldType");
+const PeopleType = require("./typedefs/PeopleType");
+const HomeworldType = require("./typedefs/HomeworldType");
 const {
   GraphQLObjectType,
   GraphQLSchema,
